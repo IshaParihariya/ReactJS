@@ -1,7 +1,9 @@
-//imports
+//component 1
 
-/*const App = () =>
-{
+import "./Hello1.css";
+
+const Hello1 = () => 
+    {
   const user ="Isha Parihariya";
   const age =21;
   return(
@@ -12,26 +14,10 @@
     </div>
 
     <div className="start2">
-      <h2>My name is {user} and I am {age} years old.</h2>
+      <h2>My name is {user} and I am {age} years old from Hello1.</h2>
     </div>
   </div>
   );
 }
-*/
 
-import Hello1 from "./components/Hello1.jsx";
-
-const App = () => {
-  return (
-    <div>
-      <Hello1 />
-      <Hello1 />
-      <Hello1 />
-      <Hello1 />
-      <Hello1 />
-      <Hello1 />
-    </div>
-  )
-}
-
-export default App
+export default Hello1
