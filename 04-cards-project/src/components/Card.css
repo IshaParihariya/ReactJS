@@ -1,0 +1,100 @@
+
+.card
+{
+  height:400px;
+  width:300px;
+  border-radius:50px;
+ border: 3px solid pink; 
+  text-align:center; 
+  margin:20px;
+  padding:15px;
+   background-color: #FFFFFF;
+}
+
+.top
+{
+    height:80px;
+    width:100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.top img
+{
+    height:50px;
+    width:55x;
+    border:2px solid rgb(156, 150, 150);
+    padding:5px;
+    border-radius:50%;
+    object-fit:cover;
+}
+.top button
+{
+    height:20px;
+    display:flex;
+    flex-direction:row;
+    width:55px;
+    color:grey;
+    border:1px solid black;
+    border-radius:7px;
+    padding:10px;
+    font-size:12px;
+    align-items: center;
+}
+
+
+.centre
+{
+    height:170px;
+    width:100%;
+    display:flex;
+    color: #6B7280;
+    align-items: flex-start;
+    justify-content:start;
+    flex-direction:column;
+    gap:5px;
+}
+.centre .tag
+{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+}
+.centre h4
+{
+    height:20px;
+    width:70px;
+    border: 1px solid #D1D5DB;
+    font-size:10px;
+    padding:5px;
+     background-color: beige;
+}
+.centre h3 span
+{
+    font-size:12px;
+    color:grey;
+}
+
+.bottom
+{
+    height:100px;
+    width:100%;
+    display:flex;
+    flex-direction: row;
+     border-top: 1px solid #ddd;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.bottom p
+{
+    color:grey;
+    font-size: 13px;
+}
+.bottom button{
+    height: 20px;
+    width:100px;
+    border-radius: 5px;
+     background-color: #111827;
+  color: white;
+}

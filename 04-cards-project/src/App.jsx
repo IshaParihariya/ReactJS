@@ -1,122 +1,95 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import "./index.css";
+import Card from "./components/Card";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="parent">
 
-      <div className="ticks"></div>
+      <Card  img={"https://i.pinimg.com/1200x/89/61/31/8961313816abd158bb3beae2edf64f63.jpg"} 
+      companyName="Amazon"
+       timeAgo={5} 
+       post="Senior UI/UX Designer"
+       type="Part-Time" 
+       level="Senior level" 
+       pay={140}
+       city="Mumbai"
+       country="India"/>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        <Card  img={"https://i.pinimg.com/1200x/37/55/df/3755df15d92e7c4f68294fcb54b25599.jpg"} 
+       companyName="Microsoft"
+  timeAgo={8}
+  post="Frontend Developer"
+  type="Full-Time"
+  level="Mid level"
+  pay={120}
+  city="Bengaluru"
+  country="India"/>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+        <Card  img={"https://i.pinimg.com/1200x/62/3c/b6/623cb67a352ad783bfa394952dc56af2.jpg"} 
+     companyName="Adobe"
+  timeAgo={12}
+  post="Product Designer"
+  type="Full-Time"
+  level="Junior level"
+  pay={90}
+  city="Noida"
+  country="India"
+/>
+
+        <Card  img={"https://i.pinimg.com/736x/35/90/b1/3590b1f6634aa063297f7cfc0531d56c.jpg"} 
+      companyName="Google"
+  timeAgo={3}
+  post="Software Engineer"
+  type="Full-Time"
+  level="Senior level"
+  pay={180}
+  city="Hyderabad"
+  country="India"
+/>
+
+        <Card  img={"https://i.pinimg.com/1200x/f4/d1/08/f4d108f38beb7855e2cb0ad17c9d157f.jpg"} 
+       companyName="Atlassian"
+  timeAgo={15}
+  post="Backend Developer"
+  type="Full-Time"
+  level="Mid level"
+  pay={110}
+  city="Bengaluru"
+  country="India"
+/>
+
+        <Card  img={"https://i.pinimg.com/736x/e2/b7/48/e2b74811d8f20d1373ec2d085d1fcfb7.jpg"} 
+      companyName="Spotify"
+  timeAgo={20}
+  post="UX Researcher"
+  type="Part-Time"
+  level="Mid level"
+  pay={85}
+  city="Pune"
+  country="India"/>
+
+        <Card  img={"https://i.pinimg.com/1200x/e5/5e/8a/e55e8af0607d1e57122667ab40a1dd1a.jpg"} 
+      companyName="Netflix"
+  timeAgo={10}
+  post="Product Manager"
+  type="Full-Time"
+  level="Senior level"
+  pay={150}
+  city="Delhi"
+  country="India"
+/>
+        <Card  img={"https://i.pinimg.com/1200x/89/61/31/8961313816abd158bb3beae2edf64f63.jpg"} 
+      companyName="Amazon"
+       timeAgo={5} 
+       post="Senior UI/UX Designer"
+       type="Part-Time" 
+       level="Senior level" 
+       pay={130}
+       city="Chennai"
+       country="India"/>
+
+    </div>
   )
 }
 
-export default App
+export default App;
