@@ -1,0 +1,42 @@
+body
+{
+    background-color:black;
+    display:flex;
+    flex-direction:row;
+    gap: 30px;              /* gap BETWEEN cards */
+    flex-wrap: wrap;        /* move to next row when space runs out */
+    padding: 20px
+}
+.card
+{
+    background-color:#615f5f;
+    height : 530px;
+    width: 500px;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align:center;
+    padding:20px;
+}
+.card img
+{
+    margin:20px;
+    height : 300px;
+    width: 300px;
+    border-radius:40px;
+    border :2px solid white;
+}
+.card h1
+{
+    color:white;
+}
+.card p
+{
+    color:white;
+}
+.card button
+{
+    color:black;
+    border-radius:10px;
+    border: 1px solid black;
+    padding:10px;
+}
