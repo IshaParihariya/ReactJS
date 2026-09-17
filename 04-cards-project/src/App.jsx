@@ -1,5 +1,5 @@
 import "./index.css";
-import Card from "./components/Card";
+import Card from "./components/card/Card";
 import Data from "./data/Data";
 
 const App = () => 
@@ -7,9 +7,11 @@ const App = () =>
   return (
     <div className="parent">
     {
-    Data.map((jobDetails) => 
-    (      
+    Data.map((jobDetails,id) => 
+    (   
+      <div key={id}>   
        <Card {...jobDetails}/>
+       </div>
     )
     )
     };
